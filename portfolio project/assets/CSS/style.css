@@ -1,0 +1,545 @@
+.container{
+    width: 95%;
+}
+h2{
+    font-size: 48px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:rgb(59, 59, 59);
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:rgb(129, 129, 129);
+}
+.border-custom{
+    border-color: var(--main-color) !important;
+}
+:root{
+    --main-color:#ff724c;
+}
+/* Start Navbar */
+.custom-btn{
+    background-color: var(--main-color);
+}
+.custom-btn i{
+    transition: .5s;
+}
+nav .nav-link{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+nav .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: -9px;
+    left: 0;
+    transition: .5s;
+}
+nav .nav-link:hover::after{
+    width: 100%;
+}
+nav .nav-link.active::after{
+    width: 100%;
+}
+.custom-btn:hover{
+    cursor: pointer;
+}
+.custom-btn:hover i{
+    transform: rotate(360deg);
+    background-color: #3b3b3b !important;
+    color: white;
+}
+/* End Navbar */
+
+/* Start Header */
+.header{
+    height: 100vh;
+    background-image: url("../img/introbg5.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    color:rgb(49, 51, 53);
+}
+.header p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    color:rgb(49, 51, 53);
+    width: 0;
+    margin-left: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    animation: typing 3s both infinite alternate-reverse steps(28),blink .7s infinite;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 314px;
+    }
+}
+@keyframes blink{
+    from{
+        border-color: rgba(0,0 ,0, 0);
+    }
+    to{
+        border-color: rgba(0,0 ,0, 0.5);
+    }
+}
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+.icons i{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border:1px solid;
+}
+.icons i:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.icons i:nth-of-type(1){
+    border-color:#3b5999;
+    color:#3b5999;
+}
+.icons i:nth-of-type(1):hover{
+    color:#fff;
+    background-color:#3b5999;
+}
+.icons i:nth-of-type(2){
+    border-color:#ea4c89;
+    color:#ea4c89;
+}
+.icons i:nth-of-type(2):hover{
+    color:#fff;
+    background-color:#ea4c89;
+}
+.icons i:nth-of-type(3){
+    border-color:#1769ff;
+    color:#1769ff;
+}
+.icons i:nth-of-type(3):hover{
+    color:#fff;
+    background-color:#1769ff;
+}
+.icons i:nth-of-type(4){
+    border-color:#0077b5;
+    color:#0077b5;
+}
+.icons i:nth-of-type(4):hover{
+    color:#fff;
+    background-color:#0077b5;
+}
+.icons i:nth-of-type(5){
+    border-color:#dd4b39;
+    color:#dd4b39;
+}
+.icons i:nth-of-type(5):hover{
+    color:#fff;
+    background-color:#dd4b39;
+}
+/* End Header */
+/* Start About */
+.about .numbers{
+    background-color: #4e4e4e;
+    color:#f3f3f3
+}
+.about .numbers span{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.about .numbers p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+    color: #fff ;
+}
+.about .container > .row{
+    width: 90%;
+    margin: auto;
+}
+.about .description{
+    background-color: #ff7a57;
+}
+.about .description p{
+    color: rgb(243, 243, 243);
+}
+.title span{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top:-30px;
+    left:-15px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+}
+.about h2{
+    width: 80%;
+}
+.custom-icon{
+    background-color: #3b3b3b;
+    padding: 15px;
+    font-size: 11px;
+    color: #fff;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+.about .btn-custom span , .contact .btn-custom span {
+    color: #3b3b3b;
+    font-size: 13px;
+    font-weight:600;
+}
+.about .btn-custom:hover i, .contact .btn-custom:hover i{
+    color: #ff7a57;
+}
+/* End About*/
+/* Start Services */
+.title span:not(.about span,.contact span){
+    color: rgb(129, 129, 129);
+}
+.services p{
+    width: 85%;
+    margin: auto;
+}
+.services .service-item{
+    position: relative;
+}
+.services .service-item::before{
+content: '';
+background-color: #f3f3f3;
+position: absolute;
+height: 0;
+width: 100%;
+left: 0;
+top:0;
+z-index: -1;
+border-radius: 5%;
+transition: 1s;
+}
+.services .service-item:hover:before{
+    height: 100%;
+}
+/* End Services */
+/* Start Portfolio */
+.portfolio{
+    background-color: #f3f3f3;
+}
+.portfolio .nav-link{
+    font-family:  'Raleway', sans-serif;
+    color: #5f5f5f;
+    border:1px solid #5f5f5f;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px 20px;
+}
+.portfolio .nav-link.active{
+    background-color: var(--main-color);
+    color: #f3f3f3;
+    border:none;
+}
+.portfolio .nav-link:not(.active):hover{
+    border:1px solid #5f5f5f;
+}
+.portfolio .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    transform: scaleY(0);
+}
+.overlay i{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 18px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .5s;
+}
+.portfolio-item:hover .overlay{
+    transform: scaleY(1);
+    transition: .5s;
+}
+.portfolio-item:hover .overlay i{
+    transform: scale(1) rotate(360deg);
+}
+.overlay i:hover{
+    background: transparent;
+    border-color: #fff;
+    color: var(--main-color);
+}
+.portfolio h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color:rgb(59, 59, 59);
+    font-weight: 500;
+}
+.portfolio p{
+    color: rgb(76, 76, 76);
+}
+.info i{
+    color:var(--main-color);
+}
+.portfolio .info{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom:30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    visibility:hidden;
+    transition: .5s;
+}
+.portfolio-item:hover .info{
+    bottom:0;
+    visibility:visible;
+}
+.portfolio-item{
+    margin-bottom: 20px;
+}
+
+/* End Portfolio */
+
+/* Start bio */
+.bio .head i{
+    background-color: var(--main-color);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    line-height: 35px;
+}
+.bio h4{
+    font-size: 14px;
+}
+.custom-color{
+    color: var(--main-color);
+}
+.bio .desc .item span, .bio .desc .item p{
+font-size: 15px;
+font-weight: 400;
+font-family: 'Roboto', sans-serif;
+
+}
+.bio .desc .item p{
+    color: #3b3b3b;
+}
+.bio .head::after ,.bio .item:not(:last-of-type)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #3b3b3b;
+    top: 2rem;
+    left: 1rem;
+    z-index: -1;
+}
+.bio .item:not(:last-of-type)::after{
+    left:-19px;
+    top:0;
+}
+.bio .item{
+    margin-left: 35px;
+    padding-bottom: 15px;
+}
+.bio .item:hover::before{
+    background-color: var(--main-color);
+}
+.bio .item::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color: white;
+    left:-23px;
+}
+.bio .head:hover i{
+    color:var(--main-color);
+    background-color: #f3f3f3;
+}
+.bio .item .bar{
+    width: 100%;
+    height: 5px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+.bio .item .bar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width:80%
+}
+.bio .new .item h4{
+    width: 80%;
+}
+.bio .item[percent="80%"] .bar::after,.bio .item[percent="80%"] h4{
+    width:80%;
+}
+.bio .item[percent="70%"] .bar::after, .bio .item[percent="70%"] h4{
+    width:70%;
+}
+.bio .item[percent="55%"] .bar::after,.bio .item[percent="55%"] h4{
+    width:55%;
+}
+.bio img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 96%;
+}
+/* End bio */
+/* Start Resume */
+.resume{
+    background-image:linear-gradient(rgba(59,59,59,0.75),rgba(59,59,59,0.75)), url("../img/brandbg.png");
+    background-size: cover;
+}
+.resume p{
+    font-size: 32px;
+    font-weight: 500;
+    color:#fff;
+    font-family: 'Dosis', sans-serif;
+}
+.resume a{
+    font-size: 13px;
+}
+.resume a:hover{
+    background-color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+/* End Resume */
+/* Start Testimonials*/
+.testimonials .information{
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+}
+.testimonials .information p{
+    font-size: 14px;
+    font-style: italic;
+}
+.testimonials .information i{
+    font-size: 22px;
+}
+.testimonials .information:hover{
+background-color: #5b5b5b;
+}
+.testimonials .information:hover i, .testimonials .information:hover p{
+    color: #f3f3f3;
+}
+.carousel-indicators{
+    margin-bottom: -20px;
+}
+.carousel-indicators [data-bs-target]{
+    height: 13px;
+    width: 13px;
+    border: 1px solid var(--main-color);
+    background: transparent;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+    background-color: var(--main-color);
+}
+/* End Testimonials */
+/* Start Contact */
+.contact{
+    background-image: linear-gradient(rgba(255,114,76,0.85),rgba(255,114,76,0.85)),
+    url("../img/contactbg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact input:focus, .contact textarea:focus{
+    box-shadow: none !important;
+    border: 1px solid #fff !important;
+}
+::placeholder{
+    color: #fff !important;
+    text-transform: capitalize;
+}
+/* End Contact */
+/* Start Map */
+.map .contact-info{
+    background-color: #282828;
+}
+.map h3{
+    color:#fff;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight:500;
+}
+.map .contact-item i{
+    background-color: #fff;
+    color:var(--main-color);
+    width:35px;
+    height:35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.map .contact-item i:hover{
+    background-color:var(--main-color);
+    transform: rotate(360deg);
+    color:#fff;
+    cursor: pointer;
+}
+.map .contact-info{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+/* End Map */
+/* Start Footer */
+.footer .copy, .footer p{
+    color: #818181;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.footer p{
+    font-size: 16px;
+}
+/* End Footer */
+
+
+
+
+
